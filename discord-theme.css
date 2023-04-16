@@ -1,0 +1,170 @@
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/base/Apple.css);
+@import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/DiscordRecolor/DiscordRecolor.css);
+
+:root {
+	--font:						"gg sans", "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;		/*	General Font			*/
+	--settingsicons:			1;						/*	Use Settings Icons in User/Server/Channel Settings: 1 = yes, 0 = no			*/
+	
+	--accentcolor: 				88,101,242;				/*	Blurple				 - 	default:	88,101,242		 - 	hex:	#5865f2		*/
+	--accentcolor2: 			255,115,250;			/*	Boostpink			 - 	default:	255,115,250		 - 	hex:	#ff73fa		*/
+	--linkcolor: 				0,176,244;				/*	Link Color			 - 	default:	0,176,244		 - 	hex:	#00b0f4		*/
+	--mentioncolor: 			250,166,26;				/*	Highlight Color		 - 	default:	250,166,26		 - 	hex:	#faa61a		*/
+	--successcolor: 			59,165,92;				/*	Success Color		 - 	default:	59,165,92		 - 	hex:	#3ba55c		*/
+	--warningcolor: 			250,166,26;				/*	Warning Color		 - 	default:	250,166,26		 - 	hex:	#faa61a		*/
+	--dangercolor:  			237,66,69;				/*	Danger Color		 - 	default:	237,66,69		 - 	hex:	#ed4245		*/
+	
+	--textbrightest: 			255,255,255;			/*	Text Color 1		 - 	default:	255,255,255		 - 	hex:	#ffffff		*/
+	--textbrighter: 			222,222,222;			/*	Text Color 2		 - 	default:	220,221,222		 - 	hex:	#dcddde		*/
+	--textbright: 				185,185,185;			/*	Text Color 3		 - 	default:	185,187,190		 - 	hex:	#b9bbbe		*/
+	--textdark: 				140,140,140;			/*	Text Color 4		 - 	default:	142,146,151		 - 	hex:	#8e9297		*/
+	--textdarker: 				115,115,115;			/*	Text Color 5		 - 	default:	114,118,125		 - 	hex:	#72767d		*/
+	--textdarkest: 				80,80,80;				/*	Text Color 6		 - 	default:	79,84,92		 - 	hex:	#4f545c		*/
+	
+	--backgroundaccent: 		50,50,50;				/*	Background Accent	 - 	default:	64,68,75		 - 	hex:	#40444b		*/
+	--backgroundprimary: 		30,30,30;				/*	Background 1		 - 	default:	54,57,63		 - 	hex:	#36393f		*/
+	--backgroundsecondary: 		20,20,20;				/*	Background 2		 - 	default:	47,49,54		 - 	hex:	#2f3136		*/
+	--backgroundsecondaryalt: 	15,15,15;				/*	Background 3		 - 	default:	41,43,47		 - 	hex:	#292b2f		*/
+	--backgroundtertiary: 		10,10,10;				/*	Background 4		 - 	default:	32,34,37		 - 	hex:	#202225		*/
+	--backgroundfloating: 		0,0,0;					/*	Background Elevated	 - 	default:	24,25,28		 - 	hex:	#18191c		*/
+}
+
+/*Vertical screen share selection | Pionowy wybór udostępniania ekranu*/
+.sourceContainer-1uqUbz {
+    flex-direction: column;
+}
+.sourceName-3Wf8QG {
+    width: unset;
+}
+.tile-3POX2m > .flex-2S1XBF {
+    flex-direction: row;
+    justify-content: start;
+}
+.tile-3POX2m > .flex-2S1XBF > .flex-2S1XBF {
+    flex: unset !important;
+    margin-right: 16px;
+}
+
+/*Pulverize the Other active threads | Usuwa przycisk od wątków*/
+.popout-TdhJ6Z {
+  display: none
+}
+
+/*Vencord green color UPDATE button | Kolor aktualizacji*/
+.vc-notification-root {
+  background-color: #248046 !important;
+}
+.vc-notification-close-btn {
+  color: white !important;
+}
+
+/*Remodel button from ReadAllNotifications | Przycisk odczytu wszystkich powiadomień*/
+.button-ejjZWC.lookFilled-1H2Jvj.colorBrand-2M3O3N.sizeMin-3Yqxk5.grow-2T4nbg {
+    border-radius: 10px;
+    font-size: 10px;
+    margin-left: 12px !important;
+    text-transform: lowercase;
+}
+
+/*Remodel button from RAN. (^addon) | addon do przycisku odczytu*/
+.contents-3NembX {
+    padding: 0 4px 0 4px;
+}
+
+/*Remove Invite Button next to channel name | usuwa przycisk zaproszeń przy kanale*/
+.actionIcon-2sw4Sl {
+    display: none;
+}
+
+/*Literally only reveal the timestamp on messages when you hover over the place | godzina wysłania wiadomości po najechaniu*/
+[class*=timestampInline-] {
+  opacity: 0;
+  transition: 0.2s opacity ease-in-out;
+}
+
+[class^=message-]:hover [class*=timestampInline-] {
+  opacity: 1;
+}
+
+/* Spotify control add-on*/
+#vc-spotify-player {
+  --spotify-wave-width: 240px;
+  --spotify-vencord-color: #8d8beb;
+  --spotify-vencord-text: var(--background-primary);
+}
+@keyframes spotifywave {
+  0% {
+    -webkit-mask-position-x: var(--spotify-wave-width);
+  }
+
+  100% {
+    -webkit-mask-position-x: 0;
+  }
+}
+#vc-spotify-player::before {
+  content: "";
+  position: absolute;
+  height: 25px;
+  z-index: 1;
+  width: var(--spotify-wave-width);
+  margin-top: -29px;
+  left: 0;
+  background: var(--spotify-vencord-color);
+  -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="240" height="25" viewBox="0 0 284 25"><path d="M283.999 15.2776C228.798 15.2776 211.243 -0.0317305 140.048 -0.000164877C69.0475 -0.000164877 51.2975 15.2776 8.58307e-06 15.2776V24.9998H284C284 24.9998 283.999 18.9392 283.999 15.2776Z"/></svg>');
+  animation: spotifywave 10s linear infinite;
+  animation-delay: 0s;
+  opacity: 1;
+}
+#vc-spotify-player#vc-spotify-player  {
+  background: linear-gradient(var(--spotify-vencord-color) 20%, var(--bg-overlay-1, var(--background-secondary-alt)));
+  border-bottom: none;
+}
+#vc-spotify-song-title#vc-spotify-song-title,
+.vc-spotify-ellipoverflow.vc-spotify-ellipoverflow,
+.vc-spotify-artist.vc-spotify-artist,
+.vc-spotify-album.vc-spotify-album
+/* , .vc-spotify-time-right, .vc-spotify-time-left */  {
+  color: var(--spotify-vencord-text);
+}
+#vc-spotify-player [class*="bar-"] {
+  background: hsl(var(--primary-700-hsl)/0.3);
+}
+#vc-spotify-player [class*="barFill"] {
+  background: var(--spotify-vencord-color);
+}
+[class*=wrapper-]:not(:empty) + #vc-spotify-player {
+  margin-top: 27px;
+}
+[class*=panels-] [class*=wrapper-] [class*=container-] {
+  border-bottom: none;
+}
+
+/* Owner tag*/
+
+span[data-tag="owner"] {
+    background-color: #f09f19; /* złoty */
+    color: black;
+  }
+  
+  span[data-tag="admin"] {
+    background-color: #c0c0c0; /* srebrny */
+    color: black;
+  }
+  
+  span[data-tag="staff"] {
+    background-color: #88540b; /* brązowy */
+    color: white;
+  }
+  
+  span[data-tag="mod"] {
+    background-color: #6e7279; /* szary */
+    color: white;
+  }
+  
+  span[data-tag="vc mod"] {
+    background-color: #0b6623; /* zielony */
+    color: white;
+  }
+  
+  .ownerIcon-255uKo {
+    display: none;
+  }
