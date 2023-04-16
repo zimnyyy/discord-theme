@@ -88,7 +88,7 @@
 /* Spotify control add-on*/
 #vc-spotify-player {
   --spotify-wave-width: 240px;
-  --spotify-vencord-color: #8d8beb;
+  --spotify-vencord-color: #271959;
   --spotify-vencord-text: var(--background-primary);
 }
 @keyframes spotifywave {
