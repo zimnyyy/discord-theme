@@ -20,12 +20,12 @@
 	--textdarker: 				    115,115,115;			/*	Text Color 5		 - 	default:	114,118,125		 - 	hex:	#72767d		*/
 	--textdarkest: 				    80,80,80;				/*	Text Color 6		 - 	default:	79,84,92		 - 	hex:	#4f545c		*/
 	
-	--backgroundaccent: 		  255,255,255;				/*	Background Accent	 - 	default:	64,68,75		 - 	hex:	#40444b		*/
-	--backgroundprimary: 		  255,255,255;			/*	Background 1		 - 	default:	54,57,63		 - 	hex:	#36393f		*/
-	--backgroundsecondary: 	  255,255,255;			/*	Background 2		 - 	default:	47,49,54		 - 	hex:	#2f3136		*/
-	--backgroundsecondaryalt: 255,255,255;				/*	Background 3		 - 	default:	41,43,47		 - 	hex:	#292b2f		*/
-	--backgroundtertiary: 		255,255,255;					/*	Background 4		 - 	default:	32,34,37		 - 	hex:	#202225		*/
-	--backgroundfloating: 		255,255,255;					/*	Background Elevated	 - 	default:	24,25,28		 - 	hex:	#18191c		*/
+	--backgroundaccent: 		  20,20,20;				/*	Background Accent	 - 	default:	64,68,75		 - 	hex:	#40444b		*/
+	--backgroundprimary: 		  5,5,5;			/*	Background 1		 - 	default:	54,57,63		 - 	hex:	#36393f		*/
+	--backgroundsecondary: 	  7,7,7;			/*	Background 2		 - 	default:	47,49,54		 - 	hex:	#2f3136		*/
+	--backgroundsecondaryalt: 3,3,3;				/*	Background 3		 - 	default:	41,43,47		 - 	hex:	#292b2f		*/
+	--backgroundtertiary: 		3,3,3;					/*	Background 4		 - 	default:	32,34,37		 - 	hex:	#202225		*/
+	--backgroundfloating: 		0,0,0;					/*	Background Elevated	 - 	default:	24,25,28		 - 	hex:	#18191c		*/
 }
 
 /*Vertical screen share selection | Pionowy wybór udostępniania ekranu*/
